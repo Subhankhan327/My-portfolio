@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(18, 18, 18, 0.9);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.logo span { color: #4facfe; }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 30px; }
+nav ul li a { text-decoration: none; color: #ccc; font-size: 14px; transition: 0.3s; }
+nav ul li a:hover { color: #4facfe; }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    min-height: 85vh;
+}
+
+.hero-content { flex: 1; }
+
+.status { color: #4CAF50; font-size: 14px; margin-bottom: 10px; }
+.dot { height: 8px; width: 8px; background-color: #4CAF50; border-radius: 50%; display: inline-block; margin-right: 5px; }
+
+h1 { font-size: 50px; line-height: 1.2; margin-bottom: 10px; }
+h1 span { color: #ffffff; }
+
+h3 { font-size: 20px; margin-bottom: 20px; color: #ccc; }
+h3 span { color: #e91e63; font-weight: bold; }
+
+.hero-text { color: #aaa; line-height: 1.6; margin-bottom: 30px; max-width: 500px; font-size: 14px; }
+
+.buttons { display: flex; gap: 15px; margin-bottom: 30px; }
+.btn {
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.behance { background: linear-gradient(45deg, #8e2de2, #4facfe); }
+.resume { background: linear-gradient(45deg, #f093fb, #f5576c); }
+.btn:hover { transform: translateY(-3px); opacity: 0.9; }
+
+.social-icons a {
+    color: #aaa;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+.social-icons a:hover { color: #4facfe; }
+
+.hero-image { flex: 1; display: flex; justify-content: center; }
+.image-circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid #4facfe;
+    box-shadow: 0 0 30px rgba(79, 172, 254, 0.5);
+    overflow: hidden;
+}
+
+.image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
